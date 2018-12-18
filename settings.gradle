@@ -1,1 +1,2 @@
 include ':app', ':multiplatform_test_shared'
+enableFeaturePreview('GRADLE_METADATA')

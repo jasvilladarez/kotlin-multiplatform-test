@@ -15,10 +15,16 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib-common'
+            api 'io.ktor:ktor-client:1.0.0'
+            api 'org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.0.0'
         }
-
         androidMain.dependencies {
             api 'org.jetbrains.kotlin:kotlin-stdlib'
+            api 'io.ktor:ktor-client-android:1.0.0'
+        }
+        iOSMain.dependencies {
+            api 'io.ktor:ktor-client-ios:1.0.0'
+            api 'org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.0.1'
         }
     }
 }

@@ -13,9 +13,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var helloLabel: UILabel!
     
+    let elloApi = ElloApi()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        helloLabel.text = CommonKt.createAppMessage()
+        
+        elloApi.getPublicToken { (token) -> KotlinUnit in
+            self.helloLabel.text = token
+            return KotlinUnit()
+        }
     }
 
 }
