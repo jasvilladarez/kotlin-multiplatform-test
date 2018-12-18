@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         ElloApi().getPublicToken {
             runOnUiThread {
-                test.text = it
+                test.text = it.accessToken
             }
         }
     }

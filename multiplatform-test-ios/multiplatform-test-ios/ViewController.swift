@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         elloApi.getPublicToken { (token) -> KotlinUnit in
-            self.helloLabel.text = token
+            self.helloLabel.text = token.accessToken
             return KotlinUnit()
         }
     }

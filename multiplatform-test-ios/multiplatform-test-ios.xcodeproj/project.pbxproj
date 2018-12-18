@@ -90,11 +90,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCC7F95321BD5496004896CC /* Build configuration list for PBXNativeTarget "multiplatform-test-ios" */;
 			buildPhases = (
+				DCC7F95A21BD550A004896CC /* ShellScript */,
 				DCC7F93D21BD5495004896CC /* Sources */,
 				DCC7F93E21BD5495004896CC /* Frameworks */,
 				DCC7F93F21BD5495004896CC /* Resources */,
 				DCC7F95921BD54B0004896CC /* Embed Frameworks */,
-				DCC7F95A21BD550A004896CC /* ShellScript */,
 			);
 			buildRules = (
 			);
